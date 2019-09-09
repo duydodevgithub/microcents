@@ -8,17 +8,23 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="{{URL::to('css/style.css') }}">
+        {{-- <link rel="stylesheet" href="css/reset.css"> --}}
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="{{ URL::to('js/main.js') }}"></script>
+        <script src="{{ URL::to('js/keywordtool.js') }}"></script>
+
     </head>
     <body>
-        <div class="container">
-            <div>
-                @include('partials.header')
+        <div>
+            @include('partials.header')
 
-                @yield('content')
-        
-                @include('partials.footer')
-            </div>
+            @yield('content')
+    
+            @include('partials.footer')
         </div>
-        
     </body>
 </html>

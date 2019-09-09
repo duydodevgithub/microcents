@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/keywordtool', function(){
+    return view('keywordtool');
+})->name('keywordtool');

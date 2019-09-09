@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
-@section('content')
+@section("content")
     <div class="container">
-        <p>Comming soon</p>
+        <h2>Keywording tool comming soon</h2>
     </div>
 @endsection
