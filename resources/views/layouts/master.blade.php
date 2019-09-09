@@ -17,9 +17,9 @@
         <script src="{{ secure_asset('js/keywordtool.js') }}"></script>
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}"> --}}
 
-        <script src="{{ URL::to('js/main.js') }}"></script>
-        <script src="{{ URL::to('js/keywordtool.js') }}"></script>
-        <link rel="stylesheet" href="{{ URL::to('css/style.css') }}">
+        <script src="{!! asset('js/main.js') !!}"></script>
+        <script src="{!! asset('js/keywordtool.js') !!}"></script>
+        <link rel="stylesheet" href="{!! asset('css/style.css') !!}">
 
 
     </head>
