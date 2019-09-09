@@ -2,6 +2,8 @@
 
 @section("content")
     <div class="container">
-        <h2>Keywording tool comming soon</h2>
+            <form style="margin-top: 20px;" class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </form>
     </div>
 @endsection
