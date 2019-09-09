@@ -13,13 +13,13 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        {{-- <script src="{{ secure_asset('js/main.js') }}"></script>
+        <script src="{{ secure_asset('js/main.js') }}"></script>
         <script src="{{ secure_asset('js/keywordtool.js') }}"></script>
-        <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}"> --}}
+        <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
 
-        <script src="{!! asset('js/main.js') !!}"></script>
+        {{-- <script src="{!! asset('js/main.js') !!}"></script>
         <script src="{!! asset('js/keywordtool.js') !!}"></script>
-        <link rel="stylesheet" href="{!! asset('css/style.css') !!}">
+        <link rel="stylesheet" href="{!! asset('css/style.css') !!}"> --}}
 
 
     </head>
