@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/keywordtool', function(){
-    return view('keywordtool');
-})->name('keywordtool');
+Route::group(['prefix' => 'keywordtool'], function(){
+    Route::get('', function(){
+        return view('keywordtool');
+    })->name('keywordtool');
+
+    Route::post('', function(Illuminate\Http\Request $request){
+        return redirect()->route('keywordtool')->with('info', $request->input('keyword'));
+    });
+});
