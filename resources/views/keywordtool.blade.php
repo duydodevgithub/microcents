@@ -80,5 +80,14 @@
 
     ?>
 
-    
+    @isset($imgArr)
+        @if(count($imgArr) > 0)
+            <div class="text-center" style="margin-top: 20px;">
+                @foreach($imgArr as $element)
+                    <img src="{{ $element->assets->preview->url }}">
+                @endforeach
+            </div>
+        @endif
+    @endisset
+
 @endsection

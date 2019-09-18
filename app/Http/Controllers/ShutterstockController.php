@@ -20,9 +20,10 @@ class ShutterstockController extends Controller
 
         $images = $shutterstock->getImages($request->input('keyword'));
 
-        print_r($images);
-
-        // return view('keywordtool', ['$images' => $images]);
+        // echo("<pre>"); 
+        // print_r($images);
+        // echo("</pre>");
+        return view('keywordtool', ['imgArr' => $images]);
 
     }
 

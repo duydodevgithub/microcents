@@ -31,11 +31,11 @@ class Shutterstock
     
             $decodedResponse = json_decode($response);
     
-            echo("<pre>");
-            print_r($decodedResponse);
-            echo("</pre>");
+            // echo("<pre>");
+            // print_r($decodedResponse);
+            // echo("</pre>");
 
-            return $decodedResponse;
+            return $decodedResponse->data;
     }
 
     public function getContributorDetail($id){
