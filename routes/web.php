@@ -20,7 +20,13 @@ Route::group(['prefix' => 'keywordtool'], function(){
         return view('keywordtool');
     })->name('keywordtool');
 
-    Route::post('', function(Illuminate\Http\Request $request){
-        return redirect()->route('keywordtool')->with('info', $request->input('keyword'));
-    });
+    Route::post('', 'ShutterstockController@getimages');
+});
+
+Route::group(['prefix' => 'contributor'], function(){
+    Route::get('', function(){
+        return view('contributor');
+    })->name('contributor');
+
+    Route::post('', 'ShutterstockController@getContributorDetail');
 });
