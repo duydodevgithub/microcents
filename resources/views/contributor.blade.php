@@ -16,11 +16,11 @@
             @endif
             <form action="{{ route('contributor') }}" method="POST" style="margin-top: 20px;">
                 <div class="form-group">
-                    <input name="contributor_id" type="text" class="form-control" placeholder="Enter shutterstock contributor id">
+                    <input name="profile_url" type="text" class="form-control" placeholder="Contributor profile url">
 
                     {{ csrf_field() }}
                 </div>
-                <button class="btn btn-primary" type="submit">Search</button>
+                <button class="btn btn-primary" type="submit">Get ID</button>
             </form>
         </div>
 </div>

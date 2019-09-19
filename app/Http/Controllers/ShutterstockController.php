@@ -27,17 +27,17 @@ class ShutterstockController extends Controller
 
     }
 
-    public function getContributorDetail(Request $request){
+    public function getContributorId(Request $request){
         $this->validate($request,[
-            'contributor_id' => 'required'
+            'profile_url' => 'required'
         ]);
 
         // print_r($request->get('contributor_id'));
 
         $shutterstock = new Shutterstock();
 
-        $contributorData = $shutterstock->getContributorDetail($request->get('contributor_id'));
+        $contributorId = $shutterstock->getContributorId($request->get('profile_url'));
 
-        // print_r($contributorData);
+        print_r($contributorId);
     }
 }

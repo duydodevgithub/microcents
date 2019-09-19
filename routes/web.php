@@ -28,5 +28,5 @@ Route::group(['prefix' => 'contributor'], function(){
         return view('contributor');
     })->name('contributor');
 
-    Route::post('', 'ShutterstockController@getContributorDetail');
+    Route::post('', 'ShutterstockController@getContributorId');
 });
