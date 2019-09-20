@@ -23,5 +23,9 @@
                 <button class="btn btn-primary" type="submit">Get ID</button>
             </form>
         </div>
+
+        @if(isset($id))
+            <p>Contributor id: {{ $id }}</p>
+        @endif
 </div>
 @endsection

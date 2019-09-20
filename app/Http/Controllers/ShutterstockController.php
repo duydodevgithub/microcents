@@ -38,6 +38,8 @@ class ShutterstockController extends Controller
 
         $contributorId = $shutterstock->getContributorId($request->get('profile_url'));
 
-        print_r($contributorId);
+        // print_r($contributorId);
+
+        return view('contributor', ['id' => $contributorId]);
     }
 }

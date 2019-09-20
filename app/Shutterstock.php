@@ -59,7 +59,7 @@ class Shutterstock
 
     public function getContributorId($profileUrl) {
         // $curl = curl_init('http://testing-ground.scraping.pro/textlist?ver=2');
-        $curl = curl_init('https://www.shutterstock.com/g/Nhutle');
+        $curl = curl_init($profileUrl);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
         
         $page = curl_exec($curl);
